@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7681302.svg)](https://doi.org/10.5281/zenodo.10794024)
+[![DOI](https://zenodo.org/badge/865038263.svg)](https://doi.org/10.5281/zenodo.17619104)
 
 <h2 align="center"> MFTCXaplin: A Multilingual Benchmark Dataset for Evaluating the Moral Reasoning of Large Language Models. </h2>  
 
