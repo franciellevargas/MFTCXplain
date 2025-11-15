@@ -71,7 +71,7 @@ Please cite our paper if you use our dataset:
 
 <h2 align="left"> FUNDING </h2>
 
-![SSC-logo-300x171](https://github.com/franciellevargas/franciellevargas.github.io/blob/fc03a6672ab2937e413e4508a5061abed4a66098/img/google-logo-menor.png)
+![SSC-logo-300x171](https://github.com/franciellevargas/franciellevargas.github.io/blob/45c7c339a940bc8020a69b3ec9d3b27a5b2190aa/img/amazon-science.png)
 ![SSC-logo-300x171](https://github.com/franciellevargas/franciellevargas.github.io/blob/fc03a6672ab2937e413e4508a5061abed4a66098/img/fapesp.jpg)
 
 </br>
