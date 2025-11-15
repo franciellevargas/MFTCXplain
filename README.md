@@ -4,42 +4,31 @@
 
 </br>
 <p align="justify"> Ensuring the moral reasoning capabilities of Large Language Models (LLMs) is a growing concern as these systems are used in socially sensitive tasks. Nevertheless, current evaluation benchmarks present two major shortcomings: a lack of annotations that justify moral classifications, which limits transparency and interpretability; and a predominant focus on English, which constrains the assessment of moral
-reasoning across diverse cultural settings. To fill these relevant gaps, we introduce MFTCXplain, a multilingual benchmark dataset for evaluating the moral reasoning of LLMs via multi-hop hate speech explanations using the Moral Foundations Theory. Our results show a misalignment between LLM outputs and human annotations in moral reasoning tasks. While LLMs perform well in hate speech detection (F1 up to 0.836), their ability to predict moral sentiments is notably weak (F1 < 0.35). Furthermore, rationale alignment remains limited mainly in underrepresented languages. Our findings show the limited capacity of current LLMs to internalize and reflect human moral reasoning. </p>>
+reasoning across diverse cultural settings. To fill these relevant gaps, we introduce MFTCXplain, a multilingual benchmark dataset for evaluating the moral reasoning of LLMs via multi-hop hate speech explanations using the Moral Foundations Theory. Our results show a misalignment between LLM outputs and human annotations in moral reasoning tasks. While LLMs perform well in hate speech detection (F1 up to 0.836), their ability to predict moral sentiments is notably weak (F1 < 0.35). Furthermore, rationale alignment remains limited mainly in underrepresented languages. Our findings show the limited capacity of current LLMs to internalize and reflect human moral reasoning. </p>
   
-<p align="justify"> This repository contains the MFTCXplain dataset that comprises 3,000 tweets across Portuguese, Italian, Persian, and English, annotated with binary hate speech labels, moral categories, and text span-level rationales.
+<p align="justify"> This repository contains the MFTCXplain dataset that comprises 3,000 tweets across Portuguese, Italian, Persian, and English, annotated with binary hate speech labels, moral categories, and text span-level rationales. Below is an example annotation for the Moral Foundations Theory (MFT) categories.</p>
 
  ![SSC-logo-200x71](https://github.com/franciellevargas/franciellevargas.github.io/blob/d9f0a61b591820083c14691ffac85db460dee4d5/img/hatebr_annotation.png)
 
 
-### HateBR 
+### MFTCXplain Statistics
 <div align="center">
 
-| class         | label | total  |
-|--------------|------- |--------|
-| Portuguese    |      | 3,500  |
-| Italian       | 0    | 3,500  |
-| Persian       | 0    | 3,500  |
-| English       | 0    | 3,500  |
-| **Total**    |       | **7,000** |
+| Language   | Hate Speech | Non-Hate Speech | Total |
+|----------- |-------------|-----------------|-------|
+| English (EN)   | 310 | 394 | 704 |
+| Italian (IT)   | 300 | 321 | 621 |
+| Persian (PE)   | 302 | 306 | 608 |
+| Portuguese (PO) | 541 | 526 | 1,067 |
+| **All Languages** | **1,453** | **1,547** | **3,000** |
 
 </div>
 
-### HateBRXplain 
-
-<div align="center">
-
-| class         | label | rationales                     | total  |
-|--------------|-------|--------------------------------|--------|
-| offensive    | 1     | human-annotated rationales    | 3,500  |
-| non-offensive | 0    | null                          | 3,500  |
-| **Total**    |       |                                | **7,000** |
-
-</div>
 
 
 </br>
 
-In addition, we also provide baseline machine learning results for both tasks: offensive language and hate speech detection. The best-obtained models are available here in .pkl files. File names are organized as `[classification (offensive or hate)_representation (ngram or tfidf)_algorithms (nb, svm, mlp or lr)]`. For example, the file *offensive_tfidf_svm.pkl* presents the model of offensive detection with tf-idf representation using the support vector machine algorithm.
+If you have any questions, feel free to contact me at: franciellealvargas@gmail.com.
 
 </br>
 
@@ -48,57 +37,35 @@ In addition, we also provide baseline machine learning results for both tasks: o
 
 Please cite our paper if you use our dataset:
 ```bibtex
-@inproceedings{vargas-etal-2022-hatebr,
-    title = "{H}ate{BR}: A Large Expert Annotated Corpus of {B}razilian {I}nstagram Comments for Offensive Language and Hate Speech Detection",
-    author = "Vargas, Francielle  and
-      Carvalho, Isabelle  and
-      Rodrigues de G{\'o}es, Fabiana  and
-      Pardo, Thiago  and
-      Benevenuto, Fabr{\'\i}cio",
-    booktitle = "Proceedings of the 13th Conference on Language Resources and Evaluation (LREC 2022)",
-    year = "2022",
-    address = "Marseille, France",
-    publisher = "European Language Resources Association",
-    url = "https://aclanthology.org/2022.lrec-1.777",
-    pages = "7174--7183",
-    }
-```
-
-```bibtex
- @article{Vargas_Carvalho_Pardo_Benevenuto_2024, 
- author={Vargas, Francielle and Carvalho, Isabelle and Pardo, Thiago A. S. and Benevenuto, Fabrício},
- title={Context-aware and expert data resources for Brazilian Portuguese hate speech detection}, 
- DOI={10.1017/nlp.2024.18}, 
- journal={Natural Language Processing},  
- year={2024}, 
- pages={435-456},
- volume{31},
- number={2},
- url={https://www.cambridge.org/core/journals/natural-language-processing/article/contextaware-and-expert-data-resources-for-brazilian-portuguese-hate-speech-detection/7D9019ED5471CD16E320EBED06A6E923#},
- }
-```
-
-
-```bibtex
-@inproceedings{salles-etal-2025-hatebrxplain,
-    title = "{H}ate{BRX}plain: A Benchmark Dataset with Human-Annotated Rationales for Explainable Hate Speech Detection in {B}razilian {P}ortuguese",
-    author = "Salles, Isadora  and
+@inproceedings{trager-etal-2025-mftcxplain,
+    title = "{MFTCX}plain: A Multilingual Benchmark Dataset for Evaluating the Moral Reasoning of {LLM}s through Multi-hop Hate Speech Explanation",
+    author = "Trager, Jackson  and
       Vargas, Francielle  and
-      Benevenuto, Fabr{\'i}cio",
-    editor = "Rambow, Owen  and
-      Wanner, Leo  and
-      Apidianaki, Marianna  and
-      Al-Khalifa, Hend  and
-      Eugenio, Barbara Di  and
-      Schockaert, Steven",
-    booktitle = "Proceedings of the 31st International Conference on Computational Linguistics (COLING 2025)",
+      Alves, Diego  and
+      Guida, Matteo  and
+      Ngueajio, Mikel K.  and
+      Agrawal, Ameeta  and
+      Daryani, Yalda  and
+      Malekabadi, Farzan Karimi  and
+      Plaza-del-Arco, Flor Miriam",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    month = nov,
     year = "2025",
-    address = "Abu Dhabi, UAE",
+    address = "Suzhou, China",
     publisher = "Association for Computational Linguistics",
-    url = "https://aclanthology.org/2025.coling-main.446/",
-    pages = "6659--6669",
+    url = "https://aclanthology.org/2025.findings-emnlp.851/",
+    doi = "10.18653/v1/2025.findings-emnlp.851",
+    pages = "15709--15740",
+    ISBN = "979-8-89176-335-7",
+    abstract = "Ensuring the moral reasoning capabilities of Large Language Models (LLMs) is a growing concern as these systems are used in socially sensitive tasks. Nevertheless, current evaluation benchmarks present two major shortcomings: a lack of annotations that justify moral classifications, which limits transparency and interpretability; and a predominant focus on English, which constrains the assessment of moral reasoning across diverse cultural settings. In this paper, we introduce MFTCXplain, a multilingual benchmark dataset for evaluating the moral reasoning of LLMs via multi-hop hate speech explanations using the Moral Foundations Theory. MFTCXplain comprises 3,000 tweets across Portuguese, Italian, Persian, and English, annotated with binary hate speech labels, moral categories, and text span-level rationales. Our results show a misalignment between LLM outputs and human annotations in moral reasoning tasks. While LLMs perform well in hate speech detection (F1 up to 0.836), their ability to predict moral sentiments is notably weak (F1 {\ensuremath{<}} 0.35). Furthermore, rationale alignment remains limited mainly in underrepresented languages. Our findings show the limited capacity of current LLMs to internalize and reflect human moral reasoning."
 }
+
 ```
+
 
 <br></br>
 
