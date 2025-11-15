@@ -1,6 +1,6 @@
 [![DOI](https://zenodo.org/badge/865038263.svg)](https://doi.org/10.5281/zenodo.17619104)
 
-<h2 align="center"> MFTCXaplin: A Multilingual Benchmark Dataset for Evaluating the Moral Reasoning of Large Language Models. </h2>  
+<h2 align="center"> MFTCXplain: A Multilingual Benchmark Dataset for Evaluating the Moral Reasoning of Large Language Models. </h2>  
 
 </br>
 <p align="justify"> Ensuring the moral reasoning capabilities of Large Language Models (LLMs) is a growing concern as these systems are used in socially sensitive tasks. Nevertheless, current evaluation benchmarks present two major shortcomings: a lack of annotations that justify moral classifications, which limits transparency and interpretability; and a predominant focus on English, which constrains the assessment of moral
