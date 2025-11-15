@@ -3,13 +3,10 @@
 <h2 align="center"> MFTCXaplin: A Multilingual Benchmark Dataset for Evaluating the Moral Reasoning of Large Language Models. </h2>  
 
 </br>
-<p align="justify"> HateBR is the first large-scale, expert-annotated dataset of Brazilian Instagram comments for offensive language and hate speech detection on the web and social media. The dataset was collected from Brazilian Instagram comments directed at politicians and manually annotated by specialists. It comprises 7,000 documents annotated across three different layers: (i) binary classification (offensive vs. non-offensive comments), (ii) offensiveness level (highly, moderately, and slightly offensive messages), and (iii) hate speech targets. Each comment was annotated by three expert annotators, achieving high inter-annotator agreement. Furthermore, baseline experiments were conducted, outperforming existing baselines in the literature for the Portuguese language. We hope that this expert-annotated dataset fosters further research on hate speech detection in the field of Natural Language Processing. </p>
-
-</br>
-<h3 align="center">***UPDATE***: <u>HateBR</u> and <u>HateBRXplain</u> new versions are available</h3> 
-</br>
+<p align="justify"> Ensuring the moral reasoning capabilities of Large Language Models (LLMs) is a growing concern as these systems are used in socially sensitive tasks. Nevertheless, current evaluation benchmarks present two major shortcomings: a lack of annotations that justify moral classifications, which limits transparency and interpretability; and a predominant focus on English, which constrains the assessment of moral
+reasoning across diverse cultural settings. To fill these relevant gaps, we introduce MFTCXplain, a multilingual benchmark dataset for evaluating the moral reasoning of LLMs via multi-hop hate speech explanations using the Moral Foundations Theory. Our results show a misalignment between LLM outputs and human annotations in moral reasoning tasks. While LLMs perform well in hate speech detection (F1 up to 0.836), their ability to predict moral sentiments is notably weak (F1 < 0.35). Furthermore, rationale alignment remains limited mainly in underrepresented languages. Our findings show the limited capacity of current LLMs to internalize and reflect human moral reasoning. </p>>
   
-<p align="justify"> This repository contains the HateBR 2.0 corpus and its explainable version, the HateBRXplain corpus. The following image and tables provide detailed definitions of offensive language and hate speech used to label the corpus, along with the number of samples for each class. The offensiveness levels and hate speech targets are available only in HateBR 1.0. If you need access to this version, please contact me at franciellealvargas@gmail.com.
+<p align="justify"> This repository contains the MFTCXplain dataset that comprises 3,000 tweets across Portuguese, Italian, Persian, and English, annotated with binary hate speech labels, moral categories, and text span-level rationales.
 
  ![SSC-logo-200x71](https://github.com/franciellevargas/franciellevargas.github.io/blob/d9f0a61b591820083c14691ffac85db460dee4d5/img/hatebr_annotation.png)
 
@@ -18,9 +15,11 @@
 <div align="center">
 
 | class         | label | total  |
-|--------------|-------|--------|
-| offensive    | 1     | 3,500  |
-| non-offensive | 0    | 3,500  |
+|--------------|------- |--------|
+| Portuguese    |      | 3,500  |
+| Italian       | 0    | 3,500  |
+| Persian       | 0    | 3,500  |
+| English       | 0    | 3,500  |
 | **Total**    |       | **7,000** |
 
 </div>
