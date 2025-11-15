@@ -24,10 +24,11 @@ reasoning across diverse cultural settings. To fill these relevant gaps, we intr
 
 </div>
 
-
-
 </br>
 
+![SSC-logo-200x71](https://github.com/franciellevargas/franciellevargas.github.io/blob/45c7c339a940bc8020a69b3ec9d3b27a5b2190aa/img/mft-cross-lang.png)
+
+</br>
 If you have any questions, feel free to contact me at: franciellealvargas@gmail.com.
 
 </br>
