@@ -8,7 +8,7 @@ reasoning across diverse cultural settings. To fill these relevant gaps, we intr
   
 <p align="justify"> This repository contains the MFTCXplain dataset that comprises 3,000 tweets across Portuguese, Italian, Persian, and English, annotated with binary hate speech labels, moral categories, and text span-level rationales. Below is an example annotation for the Moral Foundations Theory (MFT) categories.</p>
 
- ![SSC-logo-200x71](https://github.com/franciellevargas/franciellevargas.github.io/blob/d9f0a61b591820083c14691ffac85db460dee4d5/img/hatebr_annotation.png)
+ ![SSC-logo-200x71](img/MFT-ex.png)
 
 
 ### MFTCXplain Statistics
